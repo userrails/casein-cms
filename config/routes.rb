@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 	#Casein routes
 	namespace :casein do
 		resources :customers
+    resources :contacts
 	end
 
   # The priority is based upon order of creation: first created -> highest priority.
