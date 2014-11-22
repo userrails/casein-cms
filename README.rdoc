@@ -1,36 +1,45 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
-
 
 NOTE:
 https://github.com/russellquinn/casein
+
 gem 'casein', '~>5.0.0'
+
 rails g casein:install
+
 rake casein:users:create_admin email=you@yourdomain.com
+
 rails g casein:scaffold Customer name:string age:integer --create-model-and-migration = Also creates a model and migration.
+
+casein_text_field form, obj, attribute, options = {}
+
+casein_password_field form, obj, attribute, options = {}
+
+casein_text_area form, obj, attribute, options = {}
+
+casein_text_area_big form, obj, attribute, options = {}
+
+casein_check_box form, obj, attribute, options = {}
+
+casein_check_box_group form, obj, check_boxes = {}
+
+casein_radio_button form, obj, attribute, tag_value, options = {}
+
+casein_radio_button_group form, obj, radio_buttons = {}
+
+casein_select form, obj, attribute, option_tags, options = {}
+
+casein_time_zone_select form, obj, attribute, option_tags, options = {}
+
+casein_collection_select form, obj, object_name, attribute, collection, 
+value_method, text_method, options = {}
+casein_date_select form, obj, attribute, options = {}
+
+casein_time_select form, obj, attribute, options = {}
+
+casein_datetime_select form, obj, attribute, options = {}
+
+casein_file_field form, obj, object_name, attribute, options = {}
+
+casein_hidden_field form, obj, attribute, options = {}
+
+casein_custom_field form, obj, attribute, custom_contents, options = {}
