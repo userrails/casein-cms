@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 	namespace :casein do
 		resources :customers
     resources :contacts
+    resources :abouts
 	end
 
   # The priority is based upon order of creation: first created -> highest priority.

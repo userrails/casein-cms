@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141122073531) do
+ActiveRecord::Schema.define(version: 20141122141614) do
+
+  create_table "abouts", force: true do |t|
+    t.text     "about_us"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "casein_admin_users", force: true do |t|
     t.string   "login",                           null: false
@@ -31,6 +37,15 @@ ActiveRecord::Schema.define(version: 20141122073531) do
     t.string   "current_login_ip"
     t.string   "last_login_ip"
     t.string   "time_zone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "contacts", force: true do |t|
+    t.text     "address"
+    t.string   "zipcode"
+    t.float    "lat",        limit: 24
+    t.float    "lng",        limit: 24
     t.datetime "created_at"
     t.datetime "updated_at"
   end
