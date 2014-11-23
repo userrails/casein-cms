@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 		resources :customers
     resources :contacts
     resources :abouts
+    resources :images
 	end
 
   # The priority is based upon order of creation: first created -> highest priority.
